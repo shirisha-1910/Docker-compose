@@ -11,7 +11,7 @@ A simple MERN (MongoDB, Express.js, React, Node.js) stack application with Docke
 ## 1. Create a Docker Network
 To allow Docker containers to communicate, first we have to create a Docker network:
        docker network create mern
-       ![output](images/output.png)
+ ![output](images/output.png)
 
 ## 2. Build and Run the Client
 
@@ -24,27 +24,27 @@ Navigate to the mern/frontend directory and build the Docker image:
            cd mern/frontend
            docker build -t mern-frontend .
 
-              ![output](images/frontbuild.png)
+ ![output](images/frontbuild.png)
 2. Run the Client Container:
 
 Run the container with the following command:
 
        docker run --name=frontend --network=mern -d -p 5173:5173 mern-frontend
 
-          ![output](images/frontrun.png)
+![output](images/frontrun.png)
        
 3. Verify the Client is Running:
 
 Open the browser and navigate to http://localhost:5173 to see the running client.
 
-   ![output](images/front-output.png)
+![output](images/front-output.png)
 
 ## 3. Run the MongoDB Container
 
 To run MongoDB:
 
 docker run --network=mern --name mongodb -d -p 27017:27017 -v ~/opt/data:/data/db mongo:latest
-   ![output](images/dbrun.png)
+![output](images/dbrun.png)
 
 Explanation:
 
@@ -70,8 +70,8 @@ Navigate to the mern/backend directory and build the Docker image:
 Start the server container with the following command:
     
       docker run --name=backend --network=mern -d -p 5050:5050 mern-backend
-         ![output](images/back-buildrun.png)
-            ![output](images/back-output.png)
+![output](images/back-buildrun.png)
+![output](images/back-output.png)
    
 ## By Using Docker Compose file 
 
@@ -93,7 +93,7 @@ To stop and remove all containers:
 
    docker compose down
 
-      ![output](images/stopping.png)
+![output](images/stopping.png)
 
 
 [docker-compose.yaml](./docker-compose.yaml)
