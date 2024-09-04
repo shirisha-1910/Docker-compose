@@ -13,7 +13,7 @@ To allow Docker containers to communicate, first we have to create a Docker netw
 
        docker network create mern
        
- ![output](images/output.png)
+ ![output](images/network.png)
 
 ## 2. Build and Run the Client
 
