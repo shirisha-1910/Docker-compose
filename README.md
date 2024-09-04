@@ -45,7 +45,7 @@ Navigate to the mern/backend directory and build the Docker image:
 2.Run the Server Container:
 Start the server container with the following command:
     
-   docker run --name=backend --network=mern -d -p 5050:5050 mern-backend
+      docker run --name=backend --network=mern -d -p 5050:5050 mern-backend
    
 ## By Using Docker Compose file 
 
@@ -58,6 +58,8 @@ Make sure that we have a docker-compose.yml file in our project root if not we s
 
 To stop and remove all containers:
    docker compose down
+
+[docker-compose.yaml](./docker-compose.yaml)
 
  
 
