@@ -11,6 +11,7 @@ A simple MERN (MongoDB, Express.js, React, Node.js) stack application with Docke
 ## 1. Create a Docker Network
 To allow Docker containers to communicate, first we have to create a Docker network:
        docker network create mern
+       
  ![output](images/output.png)
 
 ## 2. Build and Run the Client
