@@ -16,13 +16,19 @@ To allow Docker containers to communicate, first we have to create a Docker netw
 The client is a React application. Perform the following steps:
  
 1.Build the Client Image:
+
 Navigate to the mern/frontend directory and build the Docker image:
+
            cd mern/frontend
            docker build -t mern-frontend .
 2.Run the Client Container:
+
 Run the container with the following command:
+
        docker run --name=frontend --network=mern -d -p 5173:5173 mern-frontend
+       
 3.Verify the Client is Running:
+
 Open the browser and navigate to http://localhost:5173 to see the running client.
 
 ## 3. Run the MongoDB Container
