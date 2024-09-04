@@ -85,9 +85,9 @@ Make sure that we have a docker-compose.yml file in our project root if not we s
 
      docker compose up -d
 
-        ![output](images/compose-up.png)
-           ![output](images/comp-2.png)
-              ![output](images/comp-3.png)
+![output](images/compose-up.png)
+![output](images/comp-2.png)
+![output](images/comp-3.png)
      
 2. Stop All Containers
 
